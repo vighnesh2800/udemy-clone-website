@@ -14,6 +14,10 @@ body {
     gap: 10px;
     justify-content: space-between;
     border-bottom: solid black 1px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__s1__title {
@@ -48,6 +52,26 @@ body {
     align-items: center;
 }
 
+.mylearning {
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup {
+    position: absolute;
+    background-color: white;
+    border: solid 1px black;
+    padding: 15px;
+    width: 100px;
+    top: 150%;
+    right: 0;
+    display: none;
+}
+
+.mylearning:hover .mylearning__popup {
+    display: block;
+}
+
 .categories {
     display: flex;
     padding: 10px;
@@ -67,6 +91,21 @@ body {
     width: 100%;
     height: 400px;
 
+}
+
+.sales-image {
+    position: relative;
+}
+
+.sales-image__offer {
+    width: 35%;
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+    padding: 2%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
 }
 
 .recommended-courses {
@@ -147,13 +186,13 @@ p9:hover {
     margin-top: 10px;
 }
 
-.footer{
+.footer {
     background-color: black;
     color: white;
     padding: 30px;
 }
 
-.footer__one{
+.footer__one {
     display: flex;
     gap: 10px;
 }
