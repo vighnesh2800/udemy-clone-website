@@ -68,7 +68,9 @@ body {
     display: none;
 }
 
-
+.mylearning:hover .mylearning__popup {
+    display: block;
+}
 
 .categories {
     display: flex;
